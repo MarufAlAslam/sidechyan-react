@@ -11,6 +11,7 @@ import i3 from "../../assets/i3.webp"
 import i4 from "../../assets/i4.webp"
 
 import cover from "../../assets/cover.jpg"
+import Tabs from '../tabs'
 
 const Contents = () => {
     return (
@@ -93,7 +94,9 @@ const Contents = () => {
             </div>
 
 
-            <div className="tabs bg-[#0c0c0c] mt-5 p-10 rounded-[30px]"></div>
+            <div className="tabs bg-[#0c0c0c] mt-5 p-6 rounded-[30px]">
+                <Tabs />
+            </div>
         </div>
     )
 }
