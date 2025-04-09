@@ -155,7 +155,7 @@ const Tabs = () => {
             </div>
 
             {/* tab panes */}
-            <div className="tab-panes mt-5 p-6">
+            <div className="tab-panes mt-5 xl:p-6 p-2">
                 {
                     currentTab === 1 && (
                         <div className="tab-pane">
@@ -280,26 +280,26 @@ const Tabs = () => {
                                                         <button className='text-sm bg-[#131313] px-3 py-2 rounded-[20px]'>Reply</button>
                                                     </div>
 
-                                                    <div className="replies mt-6 ml-8 bg-[#131313] p-3 rounded-[20px]">
+                                                    <div className="replies mt-6 xl:ml-8 bg-[#131313] xl:p-3 p-2 rounded-[20px]">
                                                         {
                                                             item?.replies?.map((reply, index) => (
                                                                 <div key={index} className="flex m-4 justify-start items-start gap-3">
                                                                     <img src={reply.userAvatar} className='w-[50px] h-[50px] rounded-full' alt="" />
                                                                     <div className="content">
-                                                                        <div className="flex justify-start items-center gap-3">
-                                                                            <h3 className='text-[22px] text-white'>{reply.userName}</h3>
-                                                                            <div className="dot w-1.5 h-1.5 bg-[#686868] rounded-full"></div>
-                                                                            <h4 className='text-lg text-[#686868]'>{reply.date}</h4>
+                                                                        <div className="flex flex-wrap justify-start items-center gap-3">
+                                                                            <h3 className='xl:text-[22px] text-white'>{reply.userName}</h3>
+                                                                            <div className="dot xl:block hidden w-1.5 h-1.5 bg-[#686868] rounded-full"></div>
+                                                                            <h4 className='xl:text-lg xl:block hidden text-[#686868]'>{reply.date}</h4>
                                                                         </div>
 
-                                                                        <p className='text-[#b3b3b3] mb-5'>
+                                                                        <p className='text-[#b3b3b3] mb-5 xl:text-[16px] text-sm'>
                                                                             {reply.comment}
                                                                         </p>
 
-                                                                        <div className="flex justify-start items-center gap-3">
-                                                                            <p className='text-sm bg-[#131313] px-3 py-2 rounded-[20px]'>❤️ {reply.hearts}</p>
-                                                                            <p className='text-sm bg-[#131313] px-3 py-2 rounded-[20px]'>👍 {reply.thumbs}</p>
-                                                                            <button className='text-sm bg-[#131313] px-3 py-2 rounded-[20px]'>Reply</button>
+                                                                        <div className="flex justify-start items-center xl:gap-3 gap-1">
+                                                                            <p className='text-xs lg:text-sm bg-[#131313] px-3 py-2 rounded-[20px]'>❤️ {reply.hearts}</p>
+                                                                            <p className='text-xs lg:text-sm bg-[#131313] px-3 py-2 rounded-[20px]'>👍 {reply.thumbs}</p>
+                                                                            <button className='text-xs lg:text-sm bg-[#131313] px-3 py-2 rounded-[20px]'>Reply</button>
                                                                         </div>
                                                                     </div>
                                                                 </div>

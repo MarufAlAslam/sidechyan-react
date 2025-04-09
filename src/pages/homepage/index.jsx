@@ -9,14 +9,14 @@ const Homepage = () => {
         <div>
             <Header />
             <main className='container mx-auto'>
-                <div className="flex justify-between items-start gap-12">
-                    <div className="left-sidebar w-2/12 rounded-[30px]">
+                <div className="flex justify-between xl:flex-row flex-col items-start gap-12">
+                    <div className="left-sidebar w-full xl:w-2/12 rounded-[30px]">
                         <LeftSidebar />
                     </div>
-                    <div className="contents-wrapper w-7/12">
+                    <div className="contents-wrapper w-full xl: w-7/12">
                         <Contents />
                     </div>
-                    <div className="up-next w-3/12">
+                    <div className="up-next w-full xl:w-3/12">
                         <UpNext />
                     </div>
                 </div>

@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='py-5'>
             <div className="w-[95%] mx-auto bg-[#0D0D0D] p-6 rounded-[20px] flex flex-col gap-4">
-                <div className="flex justify-between items-center">
+                <div className="flex xl:flex-row flex-col justify-between items-center gap-3">
                     <Link to="/" className='logo'>
                         Sidechayn.com
                     </Link>

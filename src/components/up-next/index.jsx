@@ -31,7 +31,7 @@ const UpNext = () => {
         },
     ]
     return (
-        <div>
+        <div className='px-5'>
             Up Next
 
             <div className="items my-6">

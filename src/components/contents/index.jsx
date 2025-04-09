@@ -28,7 +28,7 @@ const Contents = () => {
 
 
             {/* music player */}
-            <div className="music-player p-10 rounded-[30px] bg-[#0c0c0c] mt-5">
+            <div className="music-player xl:p-10 p-5 rounded-[30px] bg-[#0c0c0c] mt-5">
                 <div className="flex jusitify-center items-center gap-5">
                     <FaChevronLeft className='text-[#ffffff9c] text-2xl' />
                     <div className="div-block-151">
@@ -42,13 +42,13 @@ const Contents = () => {
                     <FaChevronRight className='text-[#ffffff9c] text-2xl' />
                 </div>
 
-                <div className="text-center text-sm mt-3 text-[#555550]">
+                <div className="text-center xl:text-sm text-xs mt-3 text-[#555550]">
                     (Hover your mouse here and scroll to change tracks quickly)
                 </div>
 
 
-                <div className="flex justify-between items-center gap-5 mt-10">
-                    <div className="w-2/3">
+                <div className="flex xl:flex-row flex-col justify-between items-center gap-5 mt-10">
+                    <div className="w-full xl:w-2/3">
                         <div className="flex justify-between items-center gap-3">
                             <h2 className='text-[#e4e2e7] font-normal text-[25px]'>I Love Gambling</h2>
                             <Link to={"/"} className='text-[#ffffff9c] text-sm'>
@@ -87,14 +87,14 @@ const Contents = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/3">
-                        <img src={cover} className='w-full' alt="" />
+                    <div className="w-full xl:w-1/3">
+                        <img src={cover} className='xl:w-full w-2/3 mx-auto' alt="" />
                     </div>
                 </div>
             </div>
 
 
-            <div className="tabs bg-[#0c0c0c] mt-5 p-6 rounded-[30px]">
+            <div className="tabs bg-[#0c0c0c] mt-5 xl:p-6 p-2 rounded-[30px]">
                 <Tabs />
             </div>
         </div>
