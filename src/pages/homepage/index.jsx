@@ -1,17 +1,20 @@
 import React from 'react'
 import Header from '../../components/header'
 import LeftSidebar from '../../components/left-sidebar'
+import Contents from '../../components/contents'
 
 const Homepage = () => {
     return (
         <div>
             <Header />
             <main className='container mx-auto'>
-                <div className="flex justify-between items-start gap-10">
-                    <div className="left-sidebar w-2/12">
+                <div className="flex justify-between items-start gap-6">
+                    <div className="left-sidebar w-2/12 rounded-[30px]">
                         <LeftSidebar />
                     </div>
-                    <div className="left-sidebar w-7/12"></div>
+                    <div className="contents-wrapper w-7/12">
+                        <Contents />
+                    </div>
                     <div className="left-sidebar w-3/12"></div>
                 </div>
             </main>

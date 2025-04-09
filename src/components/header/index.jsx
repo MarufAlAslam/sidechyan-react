@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
-        <div className='py-10'>
-            <div className="container mx-auto">
+        <div className='py-5'>
+            <div className="w-[95%] mx-auto bg-[#0D0D0D] p-6 rounded-[20px] flex flex-col gap-4">
                 <div className="flex justify-between items-center">
                     <Link to="/" className='logo'>
                         Sidechayn.com

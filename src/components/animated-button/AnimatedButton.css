@@ -1,0 +1,118 @@
+.animated-button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    transform-style: preserve-3d;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+  }
+  
+  .gradient-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: inherit;
+    background: linear-gradient(135deg, #8f00ff, #00cfff);
+  }
+  
+  .shapes-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .shape {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(30px);
+    mix-blend-mode: screen;
+  }
+  
+  .purple {
+    background: #8f00ff;
+    top: 10%;
+    left: 10%;
+    animation: rotate 12s linear infinite;
+  }
+  
+  .blue {
+    background: #00cfff;
+    bottom: 15%;
+    right: 15%;
+    animation: rotate-reverse 18s linear infinite;
+  }
+  
+  .orange {
+    background: #ff8a00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  .noise {
+    position: absolute;
+    inset: 0;
+    background: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.07;
+    z-index: 3;
+    mix-blend-mode: overlay;
+  }
+  
+  .text-wrapper {
+    position: relative;
+    z-index: 4;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.2px;
+    transition: transform 0.3s ease;
+  }
+  
+  .animated-button:hover .text-wrapper {
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  @keyframes rotate-reverse {
+    0% {
+      transform: rotate(360deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(0deg) scale(1.1);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(-20px);
+    }
+  }
+  
