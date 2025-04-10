@@ -69,6 +69,7 @@ html {
   background-image: linear-gradient(329deg, #0062ff, #ffffffa3);
   border-radius: 20px;
   /* padding: 0 9px; */
+  text-align: center;
 }
 
 .left-sidebar {
@@ -151,15 +152,18 @@ a.sidebar-link.active {
   background-image: linear-gradient(110deg, #8f45ff, #3180ff);
 }
 
+
 .show-more {
-  position: absolute;
-  bottom: -10px;
-  left: 0;
+  background-image: linear-gradient(#cf4e4e00, #0000 0%, #000000eb 79%, #000);
+  border-radius: 20px;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
   width: 100%;
-  background: linear-gradient(90deg, transparent, black);
-  color: white;
-  padding: 4px;
-  padding-top: 20px;
+  height: 180px;
+  display: flex;
+  position: absolute;
+  inset: auto 0% 0%;
 }
 
 .not-selected {
@@ -176,4 +180,24 @@ a.sidebar-link.active {
   cursor: pointer;
   border: .5px solid #111;
   transition: all .2s;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .flex.justify-between.xl\:flex-row.flex-col.items-start.gap-12 {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contents-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

@@ -44,7 +44,7 @@ const UpNext = () => {
                                     <img src={item.image} alt="" className='w-[70px] h-[70px] rounded' />
                                     <div className="flex flex-col">
                                         <h2 className='text-[#e4e2e7] font-normal'>{item.name}</h2>
-                                        <p className='text-[#ffffff9c] text-xs flex justify-start items-center gap-2'>
+                                        <p className='text-[#ffffff9c] text-xs flex justify-start items-center gap-2 flex-wrap'>
                                             {item.artist}
                                             <div className="dot w-1 h-1 bg-[#ffffff9c] rounded-full"></div>
                                             {item.trending && <span className='text-[#ffffff9c] text-xs'>️🔥 Trending</span>}

@@ -13,7 +13,7 @@ const Homepage = () => {
                     <div className="left-sidebar w-full xl:w-2/12 rounded-[30px]">
                         <LeftSidebar />
                     </div>
-                    <div className="contents-wrapper w-full xl: w-7/12">
+                    <div className="contents-wrapper w-full xl:w-7/12">
                         <Contents />
                     </div>
                     <div className="up-next w-full xl:w-3/12">

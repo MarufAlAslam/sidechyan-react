@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# zip
+*.zip
+*.tar.gz
+*.tar
+*.tar.bz2
+*.tar.xz
